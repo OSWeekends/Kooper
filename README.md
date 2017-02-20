@@ -1,16 +1,16 @@
 # SentryJS
 
-Una aplicación para poder llevar el resto de proyectos de OSW.
+An application to carry the rest of OSW projects.
 
-# Requisitos
+# Requirements
 
-Personas que estamos en el proyecto.
-Lenguajes y herramientas utilizadas.
-Archivo de proyectos activos.
-Archivo de proyectos terminados.
-Archivo para propuestas de proyectos.
+People who are in the project.
+Languages and tools used.
+File of active projects.
+File of completed projects.
+File for project proposals.
 
-# Utilidades y Recursos
+# Utilities and Resources
 
 [Agile](https://slack-files.com/T2QJA5XNX-F47V1GVS6-6526848489 "Agile")
-[Guía Open Source](https://opensource.guide/ "Guía Open Source")
+[Open Source Guide](https://opensource.guide/ "Open Source Guide")
