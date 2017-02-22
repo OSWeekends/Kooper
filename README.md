@@ -12,5 +12,5 @@ File for project proposals.
 
 # Utilities and Resources
 
-[Agile](https://slack-files.com/T2QJA5XNX-F47V1GVS6-6526848489 "Agile")
-[Open Source Guide](https://opensource.guide/ "Open Source Guide")
++ [Agile](https://slack-files.com/T2QJA5XNX-F47V1GVS6-6526848489 "Agile")
++ [Open Source Guide](https://opensource.guide/ "Open Source Guide")
