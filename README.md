@@ -22,3 +22,4 @@ An application to carry the rest of OSW projects.
 + [Open Source Licences](https://choosealicense.com/)
 + [The Main Benefit of Story Points](https://www.mountaingoatsoftware.com/blog/the-main-benefit-of-story-points)
 + [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
++ [Microtaller de Github](https://github.com/OSWeekends/microtalleres)
