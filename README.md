@@ -2,6 +2,21 @@
 
 An application to carry the rest of OSW projects.
 
+## Technologies and toools to use
+
+### Frontend
+
++ JavaScript
+
+### Backend
+
++ Node
++ Express
++ MongoDB
++ Passport (social login)
++ Use Parser to parse markdown to HTML
++ Fullcontact API
+
 ## Requirements
 
 + People who are in the project.
