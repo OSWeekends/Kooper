@@ -1,15 +1,10 @@
 'use strict'
 
-const express = require('express')
-const bodyParser = require('body-parser')
+//here you can find all related to server and database
 
-const app = express()
+
+const app = require('./app')
 const port = process.env.PORT || 3000
-
-app.use(bodyParser.urlencoded({extended: false}))
-app.use(bodyParser.json())
-
-
 
 
 app.listen(port, () => {
