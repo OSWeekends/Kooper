@@ -1,0 +1,104 @@
+{
+	"id": 76649044,
+	"name": "EventPoints",
+	"full_name": "OSWeekends/EventPoints",
+	"owner": {
+		"id": 22908549,
+		"avatar_url": "https://avatars2.githubusercontent.com/u/22908549?v=3",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/OSWeekends",
+		"html_url": "https://github.com/OSWeekends",
+		"followers_url": "https://api.github.com/users/OSWeekends/followers",
+		"following_url": "https://api.github.com/users/OSWeekends/following{/other_user}",
+		"gists_url": "https://api.github.com/users/OSWeekends/gists{/gist_id}",
+		"starred_url": "https://api.github.com/users/OSWeekends/starred{/owner}{/repo}",
+		"subscriptions_url": "https://api.github.com/users/OSWeekends/subscriptions",
+		"organizations_url": "https://api.github.com/users/OSWeekends/orgs",
+		"repos_url": "https://api.github.com/users/OSWeekends/repos",
+		"type": "Organization"
+		},
+	"html_url": "https://github.com/OSWeekends/EventPoints",
+	"description": "Proyecto Calendario. #proyecto-EventPoints en Slack",
+	"url": "https://api.github.com/repos/OSWeekends/EventPoints",
+	"collaborators_url": "https://api.github.com/repos/OSWeekends/EventPoints/collaborators{/collaborator}",
+	"branches_url": "https://api.github.com/repos/OSWeekends/EventPoints/branches{/branch}",
+	"languages_url": {
+		"HTML": 25984,
+		"Python": 9996,
+		"JavaScript": 5393
+		},
+	"contributors_url": [
+		{
+		"login": "UlisesGascon",
+		"id": 5110813,
+		"avatar_url": "https://avatars1.githubusercontent.com/u/5110813?v=3",
+		"gravatar_id": "",
+		"contributions": 76
+		},
+		{
+		"login": "Josheriff",
+		"id": 18023518,
+		"avatar_url": "https://avatars3.githubusercontent.com/u/18023518?v=3",
+		"gravatar_id": "",
+		"contributions": 9
+		},
+		{
+		"login": "carquet",
+		"id": 18001693,
+		"avatar_url": "https://avatars1.githubusercontent.com/u/18001693?v=3",
+		"gravatar_id": "",
+		"contributions": 8
+		},
+		{
+		"login": "xDae",
+		"id": 6037190,
+		"avatar_url": "https://avatars3.githubusercontent.com/u/6037190?v=3",
+		"gravatar_id": "",
+		"contributions": 3
+		},
+		{
+		"login": "LeylaVieira",
+		"id": 24264883,
+		"avatar_url": "https://avatars1.githubusercontent.com/u/24264883?v=3",
+		"gravatar_id": "",
+		"contributions": 2
+		},
+		{
+		"login": "Borjagodoy",
+		"id": 11163221,
+		"avatar_url": "https://avatars1.githubusercontent.com/u/11163221?v=3",
+		"gravatar_id": "",
+		"contributions": 2
+		},
+		{
+		"login": "sergormo",
+		"id": 6580010,
+		"avatar_url": "https://avatars2.githubusercontent.com/u/6580010?v=3",
+		"gravatar_id": "",
+		"contributions": 1
+		}
+	],
+	"created_at": "2016-12-16T11:35:50Z",
+	"updated_at": "2017-02-14T19:12:39Z",
+	"pushed_at": "2017-03-11T20:12:32Z",
+	"git_url": "git://github.com/OSWeekends/EventPoints.git",
+	"ssh_url": "git@github.com:OSWeekends/EventPoints.git",
+	"clone_url": "https://github.com/OSWeekends/EventPoints.git",
+	"svn_url": "https://github.com/OSWeekends/EventPoints",
+	"homepage": "http://eventpoints.osweekends.com",
+	"size": 21681,
+	"stargazers_count": 6,
+	"watchers_count": 6,
+	"has_issues": true,
+	"has_downloads": true,
+	"has_wiki": true,
+	"has_pages": false,
+	"forks_count": 3,
+	"open_issues_count": 9,
+	"forks": 3,
+	"open_issues": 9,
+	"watchers": 6,
+	"default_branch": "master",
+	"network_count": 3,
+	"subscribers_count": 8
+}
