@@ -1,4 +1,4 @@
-# SentryJS
+# KooperJS
 
 An application to carry the rest of OSW projects.
 
