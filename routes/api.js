@@ -1,7 +1,7 @@
 'use strict'
 
 const express = require('express')
-const CollaboratorCtrl = require('../controllers/collaborators')
+const CollaboratorCtrl = require('../controllers/api')
 const ProjectCtrl = require('../controllers/projects')
 const api = express.Router()
 
