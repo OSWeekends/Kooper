@@ -16,7 +16,7 @@ gulp.task('default', ['css', 'javascript'], function() {
     gulp.watch("front/*.html").on('change', browserSync.reload);
 });
 
-gulp.task('imagenes', function() {
+gulp.task('img', function() {
     gulp.src('front/origin/assets/img/*')
         .pipe(imagemin())
         .pipe(gulp.dest('front/dist/assets/img'));
