@@ -19,13 +19,13 @@ gulp.task('default', ['css', 'javascript'], function() {
 gulp.task('img', function() {
     gulp.src('front/origin/assets/img/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('front/dist/assets/img'));
+        .pipe(gulp.dest('front/public/assets/img'));
 });
 
 gulp.task('javascript', function() {
     gulp.src('front/origin/assets/js/*.js')
         .pipe(uglify())
-        .pipe(gulp.dest('front/dist/assets/js'));
+        .pipe(gulp.dest('front/public/assets/js'));
 });
 
 gulp.task('css', function(){
@@ -36,6 +36,6 @@ gulp.task('css', function(){
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('front/dist/assets/css'))
+        .pipe(gulp.dest('front/public/assets/css'))
         .pipe(browserSync.stream());
 });

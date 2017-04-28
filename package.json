@@ -1,8 +1,8 @@
 {
-  "name": "kooper_front",
+  "name": "kooper",
   "version": "1.0.0",
-  "description": "Kooper frontend tasks",
-  "main": "index.js",
+  "description": "Open Source projects visualizer.",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,12 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/OSWeekends/Kooper.git"
   },
-  "author": "@IgnaciodeNuevo",
-  "license": "SEE LICENSE IN LICENSE",
+  "author": {
+    "name": "Open Source Weekends" ,
+    "url": "http://osweekends.com"
+  },
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/OSWeekends/Kooper/issues"
   },
   "homepage": "https://github.com/OSWeekends/Kooper#readme",
+  "dependencies": {
+    "body-parser": "1.17.1",
+    "express": "4.15.2"
+  },
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
