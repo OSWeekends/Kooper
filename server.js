@@ -1,12 +1,26 @@
 'use strict'
 
-//here you can find all related to server and database
+//here you can find anything related to configuration
+
+const express = require('express')
+const bodyParser = require('body-parser')
+
+const app = express()
+const api = require('./routes/api')
+
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.json())
 
 
-const app = require('./app')
-const port = process.env.PORT || 3000
+app.use( (req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 
-app.listen(port, () => {
-	console.log(`opening server in http//localhost:${port}`)
-})
+app.use('/api' , api)
+
+
+
+module.exports = app

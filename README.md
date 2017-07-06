@@ -8,7 +8,7 @@ An application to carry the rest of OSW projects.
 
 + JavaScript
 
-### Backend
+### Backend
 
 + Node
 + Express
