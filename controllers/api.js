@@ -1,6 +1,5 @@
 'use strict'
 
-const fs = require('fs')
 
 function getCollaborators(req, res){
 	fs.readFile('./collaborators.json', 'utf8', (err, data) => {
