@@ -6,7 +6,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 
 const app = express()
-const api = require('./routes/api')
+// const api = require('./routes/api')
 
 //launch server
 const port = process.env.PORT || 8000;
@@ -28,8 +28,14 @@ app.use( (req, res, next) => {
 //use router
 // app.use('/api' , api)
 //access to demo data in json file
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
+app.get('/', (req, res) =>{
+	res.send('Hola mundo')
+})
 
+app.get('/blurb',(res, req) =>{
+	res.sendFile('./index.html')
+})
 
-module.exports = app
+// module.exports = app
