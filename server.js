@@ -8,6 +8,11 @@ const bodyParser = require('body-parser')
 const app = express()
 const api = require('./routes/api')
 
+const port = process.env.PORT || 8000;
+app.listen(port, ()=> {
+    console.log(`server is on port ${port}`);
+});
+
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
