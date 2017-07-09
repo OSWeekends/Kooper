@@ -25,17 +25,14 @@ app.use( (req, res, next) => {
   next();
 });
 
-//use router
-// app.use('/api' , api)
-//access to demo data in json file
-// app.use(express.static('public'));
 
+app.use(express.static('public'));
+
+//render the html index file from public 
 app.get('/', (req, res) =>{
-	res.send('Hola mundo')
+	res.sendFile('./public/index.html')
 })
 
-app.get('/blurb',(res, req) =>{
-	res.sendFile('./index.html')
-})
+
 
 // module.exports = app

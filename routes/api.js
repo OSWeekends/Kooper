@@ -1,9 +1,9 @@
-'use strict'
+// 'use strict'
 
-const express = require('express')
+// const express = require('express')
 // const CollaboratorCtrl = require('../controllers/collaborators')
 // const ProjectCtrl = require('../controllers/projects')
-const api = express.Router()
+// const api = express.Router()
 
 //set home page
 // api.get('/', (req, res) =>{
@@ -21,4 +21,4 @@ const api = express.Router()
 // api.get('/v1/project/:id', ProjectCtrl.getProject)
 
 
-module.exports = api
+// module.exports = api
