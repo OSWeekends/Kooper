@@ -5,18 +5,12 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
-const CollaboratorsDemoData = require('./public/collaborators.json')
-const Collaborator_idDemoData = require('./public/collaborator_id.json')
-const ProjectsDemoData = require('./public/projects.json')
-const Project_idDemoData = require('./public/project_id.json')
+
+// const Collaborator_idDemoData = require('./public/collaborator_id.json')
+// const ProjectsDemoData = require('./public/projects.json')
+// const Project_idDemoData = require('./public/project_id.json')
 // const api = require('./routes/api')
-
-//launch server
-const port = process.env.PORT || 8000;
-app.listen(port, ()=> {
-    console.log(`server is on port ${port}`);
-});
-
+const collaboratorsCTRL = require('./controllers/collaborators')
 //middleware
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
@@ -28,27 +22,26 @@ app.use( (req, res, next) => {
   next();
 });
 
-
 app.use(express.static('public'));
 
+app.get('/api/v1/collaborators', collaboratorsCTRL.getCollaborators)
 
+// app.get('/api/v1/collaborator/:id', (req, res) =>{
+// 	res.send(JSON.stringify(Collaborator_idDemoData))
+// })
 
-app.get('/api/v1/collaborators', (req, res) =>{
-	res.send(JSON.stringify(CollaboratorsDemoData))
-})
+// app.get('/api/v1/projects', (req, res) =>{
+// 	res.send(JSON.stringify(ProjectsDemoData))
+// })
 
-app.get('/api/v1/collaborator/:id', (req, res) =>{
-	res.send(JSON.stringify(Collaborator_idDemoData))
-})
+// app.get('/api/v1/project/:id', (req, res) =>{
+// 	res.send(JSON.stringify(Project_idDemoData))
+// })
 
-app.get('/api/v1/projects', (req, res) =>{
-	res.send(JSON.stringify(ProjectsDemoData))
-})
-
-app.get('/api/v1/project/:id', (req, res) =>{
-	res.send(JSON.stringify(Project_idDemoData))
-})
-
-
+//launch server
+const port = process.env.PORT || 8000;
+app.listen(port, ()=> {
+    console.log(`server is on port ${port}`);
+});
 
 module.exports = app
