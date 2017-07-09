@@ -6,11 +6,11 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 
-// const Collaborator_idDemoData = require('./public/collaborator_id.json')
-// const ProjectsDemoData = require('./public/projects.json')
-// const Project_idDemoData = require('./public/project_id.json')
+
 // const api = require('./routes/api')
 const collaboratorsCTRL = require('./controllers/collaborators')
+const projectsCTRL = require('./controllers/projects')
+
 //middleware
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
@@ -24,19 +24,11 @@ app.use( (req, res, next) => {
 
 app.use(express.static('public'));
 
+// ENDPOINTS
 app.get('/api/v1/collaborators', collaboratorsCTRL.getCollaborators)
-
-// app.get('/api/v1/collaborator/:id', (req, res) =>{
-// 	res.send(JSON.stringify(Collaborator_idDemoData))
-// })
-
-// app.get('/api/v1/projects', (req, res) =>{
-// 	res.send(JSON.stringify(ProjectsDemoData))
-// })
-
-// app.get('/api/v1/project/:id', (req, res) =>{
-// 	res.send(JSON.stringify(Project_idDemoData))
-// })
+app.get('/api/v1/collaborator/:id', collaboratorsCTRL.getCollaborator)
+app.get('/api/v1/projects', projectsCTRL.getProjects)
+app.get('/api/v1/project/:id', projectsCTRL.getProject)
 
 //launch server
 const port = process.env.PORT || 8000;
