@@ -31,10 +31,7 @@ app.use( (req, res, next) => {
 
 app.use(express.static('public'));
 
-//render the html index file from public 
-app.get('/', (req, res) =>{
-	res.sendFile('./public/index.html')
-})
+
 
 app.get('/api/v1/collaborators', (req, res) =>{
 	res.send(JSON.stringify(CollaboratorsDemoData))
@@ -54,4 +51,4 @@ app.get('/api/v1/project/:id', (req, res) =>{
 
 
 
-// module.exports = app
+module.exports = app
