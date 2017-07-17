@@ -4,6 +4,7 @@
   "description": "Open Source projects visualizer.",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,7 +12,7 @@
     "url": "git+https://github.com/OSWeekends/Kooper.git"
   },
   "author": {
-    "name": "Open Source Weekends" ,
+    "name": "Open Source Weekends",
     "url": "http://osweekends.com"
   },
   "license": "GPL-3.0",
@@ -20,8 +21,8 @@
   },
   "homepage": "https://github.com/OSWeekends/Kooper#readme",
   "dependencies": {
-    "body-parser": "1.17.1",
-    "express": "4.15.2"
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
   },
   "devDependencies": {
     "browser-sync": "^2.18.8",
@@ -30,6 +31,7 @@
     "gulp-cssnano": "^2.1.2",
     "gulp-imagemin": "^3.2.0",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^2.1.2"
+    "gulp-uglify": "^2.1.2",
+    "nodemon": "^1.11.0"
   }
 }
